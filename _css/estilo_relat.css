@@ -1,0 +1,271 @@
+.relat_sit_det1{
+	margin-top: 310px;
+	position: absolute;
+}
+
+.relat_sit_det2 {
+	margin-top: 105px;
+	position: absolute;
+}
+
+.relat_tipo_det1 {
+	margin-left: 510px;
+	margin-top: 310px;
+	position: absolute;
+}
+
+.relat_tipo_det2{
+	margin-left: 451px;
+	margin-top: 135px;
+	position: absolute;
+}
+
+/***
+ essas são as configurações das divs principais que darão
+ origem ao corpo onde as tabelas estarão contidas 
+ ***/
+#table_div_estilo{
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+	height: 100%;
+	width: 700px;
+	background-color: transparent;
+	padding: 0px;
+}
+
+.tab_title77{
+	position: relative;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	margin-top: 40px;
+}
+
+.tab_title88{
+	position: absolute;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	margin-top: 40px;
+	margin-left: 0px;
+	margin-bottom: 30px;
+}
+
+.tab_title99{
+	position: absolute;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;	
+	margin-top: 20px;
+	margin-left: 560px;
+}
+
+
+#table_div_estilo77{
+	clear: both;
+	position: relative;
+	float: left;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+	height: 160px;
+	width: 325px;
+	background-color: transparent;
+	padding: 0px;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+#table_div_estilo88{
+	clear: both;
+	position: relative;
+	float: left;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+	height: 260px;
+	width: 325px;
+	background-color: transparent;
+	padding: 0px;
+	margin-left: 50px;
+	margin-top: 60px;
+}
+
+#table_div77{
+	clear: both;
+	text-align: left;
+	height: 140px;
+	width: 100%;
+}
+
+#table_div88{
+	clear: both;
+	text-align: left;
+	height: 240px;
+	width: 100%;
+}
+
+#piechart_cort_relig{
+	margin-top: 10px;
+	width: 570px; 
+	height: 250px;	
+	margin-left: 390px;
+}
+
+#table_div_estilo2, #table_div_estilo3{
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+	height: 110px;	
+	background-color: transparent;
+	width: 350px;
+	padding: 0px;
+	float: left;
+	margin-left: 60px;
+}
+
+#table_div_estilo4{
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+	height: 100%;
+	width: 730px;
+	background-color: transparent;
+	padding: 0px;
+}
+
+.table_div_estilo5{
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+	height: 100%;
+	width: 310px;
+	background-color: transparent;
+	padding: 0px;
+	float: left;
+}
+
+.table_div_estilo6, #table_div_estilo13, #table_div_estilo14{
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+	height: 100%;
+	width: 310px;
+	background-color: transparent;
+	padding: 0px;
+}
+
+#table_div_estilo13{
+margin-right: 100px;
+}
+
+#table_div_estilo14{
+margin: 0px auto 0px auto;
+}
+
+#relat_cort_s_imp_table_3{
+margin-top: -80px;	
+}
+
+#relat_cort_det2{
+	margin-top: 20px;		
+}
+
+#table_div_estilo2{
+	height: 110px;	
+}
+
+#table_div_estilo3{
+	height: 135px;
+}
+
+/* Configuração do td e tr da tabela 1*/
+#table_div td, #table_div tr{ 
+text-align: left;	
+}
+
+/* Configuração do td e tr da tabela 2*/
+#table_div2 td, #table_div2 tr{
+text-align: left;
+}
+
+#table_div3 td, #table_div3 tr{
+text-align: center;
+}
+
+#table_div4 td, #table_div4 tr{
+text-align: center;
+}
+
+/* configuração geral das tabeelas 1 e 2 */
+#table_div, #table_div2, {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+#table_div3{
+	width: 330px;
+	height: 80px;
+}
+
+#table_div4{
+width: 330px;
+height: 110px;
+	}
+
+#table_div5{
+	width: 730px;	
+	height: 180px;	
+}
+
+/* configuração do título das tabelas 1 e 2 */
+.tab_title{
+	font-size: 13px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+
+#tab_title13{
+	font-size: 13px;
+	font-weight: bold;
+	font-style: italic;
+	clear: both; 
+	text-align: center; 
+	margin-top: 120px;
+}
+
+#tab_title14{
+	font-size: 13px;
+	font-weight: bold;
+	font-style: italic;
+	clear: both; 
+	text-align: center; 
+	margin-top: 20px;
+}
+
+.tab_title{
+	text-align: left;
+}
+
+#tab_title_dir{
+	font-size: 13px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+legend.position{
+	position: 'bottom';
+}
+
+p {
+	color: #000;
+}
+
+.bold-font {
+    font-weight: bold;
+  }
+
+ #resultado_total{
+	font-style: Verdana, Arial, Helvetica, sans-serif;	
+	font-size: 14px;
+	padding: 10px;
+	margin-top: -3px;
+	font-weight: bolder;
+	width: 110px;
+	height: 20px;
+	text-align: left;
+	margin-left: -750px;
+	margin-bottom: 15px;
+	margin-top: -30px;
+ } 

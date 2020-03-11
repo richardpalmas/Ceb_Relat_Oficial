@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Stick Chart</title>
+  <link href="https://playground.anychart.com/gallery/Column_Charts/Stick_Chart/iframe" rel="canonical">
+  <meta content="Animation,Bar Chart,Column Chart,Stick Chart,Tooltip" name="keywords">
+  <meta content="AnyChart - JavaScript Charts designed to be embedded and integrated" name="description">
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css?hcode=c11e6e3cfefb406e8ce8d99fa8368d33" rel="stylesheet" type="text/css">
+  <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css?hcode=c11e6e3cfefb406e8ce8d99fa8368d33" rel="stylesheet" type="text/css">
+  <style>html, body, #container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}</style>
+ </head>
+ <body>
+  <div id="container"></div>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js?hcode=c11e6e3cfefb406e8ce8d99fa8368d33"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js?hcode=c11e6e3cfefb406e8ce8d99fa8368d33"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js?hcode=c11e6e3cfefb406e8ce8d99fa8368d33"></script>
+  <script type="text/javascript">anychart.onDocumentReady(function () {
+    // create column chart
+    var chart = anychart.column();
+    // turn on chart animation
+    chart.animation(true);
+    // set chart title text settings
+    chart.title('World\'s largest cities');
+
+    // create area series with passed data
+    chart.stick(getData());
+
+    chart.credits().enabled(true)
+            .url('https://en.wikipedia.org/wiki/List_of_cities_proper_by_population')
+            .text('Data source: https://en.wikipedia.org/wiki/List_of_cities_proper_by_population')
+            .logoSrc('https://en.wikipedia.org/static/favicon/wikipedia.ico');
+
+    // set scale minimum
+    chart.yScale()
+            .minimum(0)
+            .ticks({
+                interval: 5
+            });
+
+    // tooltips position and interactivity settings
+    chart.tooltip()
+            .positionMode('point')
+            .format('Population in 2016: {%Value}{groupsSeparator: } mln');
+    chart.interactivity().hoverMode('by-x');
+
+    // axes titles
+    chart.yAxis().title('Population (millions)');
+    chart.xAxis().labels().rotation(-90);
+    // set container id for the chart
+    chart.container('container');
+    // initiate chart drawing
+    chart.draw();
+});
+
+function getData() {
+    return [
+        ['Shanghai', 24.2],
+        ['Karachi', 23.5],
+        ['Beijing', 21.5],
+        ['Delhi', 16.7],
+        ['Lagos', 16.0],
+        ['Tianjin', 15.2],
+        ['Istanbul', 14.1],
+        ['Tokyo', 13.5],
+        ['Guangzhou', 13],
+        ['Mumbai', 12.4],
+        ['Moscow', 12.1],
+        ['São Paulo', 11.8],
+        ['Shenzhen', 10.4],
+        ['Jakarta', 10.1],
+        ['Lahore', 10],
+        ['Seoul', 9.9],
+        ['Wuhan', 9.7],
+        ['Kinshasa', 9.7],
+        ['Cairo', 9.2],
+        ['Mexico City', 8.8]
+    ]
+}</script>
+ </body>
+</html>
